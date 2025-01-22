@@ -1,47 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    line-height: 0;
+.slider-container {
+  padding: 40px 0;
+  background: #f8f9fa;
 }
 
-body{
-    background: #ccc;
-    text-align: center;
+.center-slide {
+  transform: scale(1);
+  transition: 0.3s;
 }
 
-.container{
-    width: 600px;
-    margin: 10px auto;
-    border: 5px solid white;
-    overflow: auto;
+.slick-slide {
+  padding: 0 10px;
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: 0.3s;
 }
 
-.thumb{
-    width: 200px;
-    float: left;
-    border: 2px solid white;
-    box-sizing: border-box;
-    transition: 0.3s all ease-in-out;
+.slick-center {
+  opacity: 1;
+  transform: scale(1);
 }
 
-.thumb:hover{
-    opacity: 0.5;
-    cursor: pointer ;
+.card {
+  transition: 0.3s;
+  cursor: pointer;
+  max-width: 300px; /* Menambahkan max-width untuk mengecilkan card */
+  margin: 0 auto; /* Untuk menengahkan card */
 }
 
-
-@keyframes fade {
-    to {
-        opacity: 1;
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.fade{
-    opacity: 0;
-    animation: fade 0.5s forwards;
+.modal-img {
+  width: 100%;
+  height: auto;
 }
 
-.active{
-    opacity: 0.5;
+.card-img-top {
+  height: 200px; /* Mengatur tinggi gambar card */
+  object-fit: cover; /* Memastikan gambar menutupi area dengan baik */
+}
+
+/* Mengatur container galeri agar lebih kecil */
+.gallery-container {
+  max-width: 900px;
+  margin: 0 auto;
 }

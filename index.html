@@ -1,26 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="container">
-        <img src="./img/1.jpg" alt="Crash" class="jumbo">
-        <div class="thumbnail">
-            <img src="./img/1.jpg" alt="Crash" class="thumb">
-            <img src="./img/2.jpg" alt="Crash" class="thumb">
-            <img src="./img/3.jpg" alt="Crash" class="thumb">
-            <img src="./img/4.jpg" alt="Crash" class="thumb">
-            <img src="./img/5.jpg" alt="Crash" class="thumb">
-            <img src="./img/6.jpg" alt="Crash" class="thumb">
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dokumentasi Foto Kami</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Galeri Foto Kami</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#album">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+    
+
+    <!-- Slider Section -->
+    <div class="slider-container" id="beranda">
+      <div class="container">
+        <div class="photo-slider">
+          <div><img src="./image/1.JPG" class="img-fluid" alt="Foto 1" /></div>
+          <div><img src="./image/2.JPG" class="img-fluid" alt="Foto 2" /></div>
+          <div><img src="./image/3.JPG" class="img-fluid" alt="Foto 3" /></div>
+          <div><img src="./image/4.JPG" class="img-fluid" alt="Foto 4" /></div>
+        </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Gallery Section -->
+    <div class="container my-5 gallery-container" id="album">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal1">
+            <img src="./image/1.JPG" class="card-img-top" alt="Foto 1" />
+            <div class="card-body">
+              <h5 class="card-title">Kenangan Pertama</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal2">
+            <img src="./image/2.JPG" class="card-img-top" alt="Foto 2" />
+            <div class="card-body">
+              <h5 class="card-title">Momen Spesial</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal3">
+            <img src="./image/3.JPG" class="card-img-top" alt="Foto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Petualangan Kami</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal4">
+            <img src="./image/4.JPG" class="card-img-top" alt="Foto 4" />
+            <div class="card-body">
+              <h5 class="card-title">Momen Bahagia</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal5">
+            <img src="./image/1.JPG" class="card-img-top" alt="Foto 5" />
+            <div class="card-body">
+              <h5 class="card-title">Kenangan Indah</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal6">
+            <img src="./image/2.JPG" class="card-img-top" alt="Foto 6" />
+            <div class="card-body">
+              <h5 class="card-title">Cerita Kita</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal7">
+            <img src="./image/3.JPG" class="card-img-top" alt="Foto 7" />
+            <div class="card-body">
+              <h5 class="card-title">Waktu Bersama</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal8">
+            <img src="./image/4.JPG" class="card-img-top" alt="Foto 8" />
+            <div class="card-body">
+              <h5 class="card-title">Kisah Cinta</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-4">
+          <div class="card" data-bs-toggle="modal" data-bs-target="#modal9">
+            <img src="./image/1.JPG" class="card-img-top" alt="Foto 9" />
+            <div class="card-body">
+              <h5 class="card-title">Masa Indah</h5>
+              <p class="card-text">Klik untuk melihat detail...</p>
+            </div>
+          </div>
+        </div>
+
+    
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Kenangan Pertama</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/1.JPG" class="modal-img" alt="Foto 1" />
+            <p class="mt-3">
+              Ini adalah kenangan pertama kami bersama. Saat itu kami sedang
+              mengunjungi taman kota dan mengabadikan momen bahagia ini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Momen Spesial</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/2.JPG" class="modal-img" alt="Foto 2" />
+            <p class="mt-3">
+              Perayaan anniversary pertama kami di restoran favorit. Momen yang
+              tak terlupakan dengan suasana yang romantis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Petualangan Kami</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/3.JPG" class="modal-img" alt="Foto 3" />
+            <p class="mt-3">
+              Perjalanan kami ke pantai di akhir pekan. Menikmati matahari
+              terbenam bersama dan membuat kenangan indah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal4 -->
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Momen Bahagia</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/4.JPG" class="modal-img" alt="Foto 4" />
+            <p class="mt-3">
+              Saat-saat bahagia yang kami habiskan bersama di taman hiburan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="modal5" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Kenangan Indah</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/1.JPG" class="modal-img" alt="Foto 5" />
+            <p class="mt-3">
+              Momen indah saat kami mengunjungi tempat wisata favorit kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="modal6" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cerita Kita</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/2.JPG" class="modal-img" alt="Foto 6" />
+            <p class="mt-3">
+              Salah satu momen spesial dalam perjalanan cinta kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="modal7" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Waktu Bersama</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/3.JPG" class="modal-img" alt="Foto 7" />
+            <p class="mt-3">
+              Menghabiskan waktu bersama di tempat favorit kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="modal8" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Kisah Cinta</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/4.JPG" class="modal-img" alt="Foto 8" />
+            <p class="mt-3">
+              Momen-momen manis yang membuat kisah cinta kami semakin berwarna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div class="modal fade" id="modal9" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Masa Indah</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/1.JPG" class="modal-img" alt="Foto 9" />
+            <p class="mt-3">
+              Mengabadikan masa-masa indah dalam perjalanan kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 10 -->
+    <div class="modal fade" id="modal10" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Perjalanan Cinta</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="./image/2.JPG" class="modal-img" alt="Foto 10" />
+            <p class="mt-3">
+              Setiap langkah dalam perjalanan cinta kami adalah momen berharga.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".photo-slider").slick({
+          centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 3,
+          autoplay: true, // Aktifkan autoplay
+          autoplaySpeed: 1000, // Kecepatan berganti dalam milidetik (3000ms = 3 detik)
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
 </html>
